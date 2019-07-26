@@ -25,6 +25,8 @@
 
 // Explain in your own words why `nestedfunction()` can access the variable `internal`.
 
+//`nestedfunction()` can access the variable `internal` because it is making use of the concept of Closure, where a nested function can reach out to its parent and access the variable. The parent function is myFunction and inside of it is the nestedFunction, the child. A better way to look at it is parent function is a kingdom in the world, and inside of the kindgom is smaller cities, cities can reach out to the kingdom for data but kingdom are too big to reach into cities. 
+
 // Explanation: 
 
 
