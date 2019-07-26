@@ -42,6 +42,13 @@ Closure is when an inner function is granted access to the variables of the oute
 
 4. Describe the four rules of the 'this' keyword.
 
+Rule One: Window/Global Binding: When you do not define what is left of the dot .this will default to the window or global object. 
+
+Rule Two: Implicit Binding: The dot to the left of .this is defined at the time of call by looking to what object '.this' is nested in.  
+
+Rule Three: New Binding: A function called 'new' is invoke to bind '.this' with a new object that is created. 
+
+Rule Four: Explicit Binding: '.this' is difined by the stated object before the dot. for example 'cat.this', it is clearly stated that 'this' is now bounded with the cat object.
 
 
 5. Why do we need super() in an extended class?
@@ -80,7 +87,7 @@ Test your knowledge of objects and arrays.
 
 ## Task 2: Functions
 This challenge takes a look at callbacks and closures as well as scope. 
-* [ ] Use the [functions.js](challenges/functions.js) link to get started. Read the instructions carefully!
+* [x ] Use the [functions.js](challenges/functions.js) link to get started. Read the instructions carefully!
 
 ## Task 3: Prototypes
 Create constructors, bind methods, and create cuboids in this prototypes challenge.
