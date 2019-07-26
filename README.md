@@ -30,11 +30,15 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. Describe the biggest difference between `.forEach` & `.map`.
 
-    the forEach method is when you are creating a loop of a function to apply on an array. The Map method 
+    the forEach method is when you are creating a loop that applies a function onetime to each array element. The .map method applies a function to each array elmenent and creates a new array from the results. 
 
 2. What is the difference between a function and a method?
 
+A method is when a function is held by an object or class. A function is independent of an object or class.
+
 3. What is closure?
+
+
 
 4. Describe the four rules of the 'this' keyword.
 
