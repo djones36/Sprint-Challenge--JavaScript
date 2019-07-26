@@ -34,15 +34,19 @@ Edit this document to include your answers after each question. Make sure to lea
 
 2. What is the difference between a function and a method?
 
-A method is when a function is held by an object or class. A function is independent of an object or class.
+A method is when a function is a property of object.  A function is independent of an object.
 
 3. What is closure?
 
-
+Closure is when an inner function is granted access to the variables of the outer function scope.
 
 4. Describe the four rules of the 'this' keyword.
 
+
+
 5. Why do we need super() in an extended class?
+
+You need a super() in an extended class so that the child can inherit the attributes and methods of the parent. It links the two classes, establishing inherence. 
 
 ## Project Set up
 
