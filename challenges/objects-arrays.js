@@ -78,6 +78,7 @@ const universities = [];
 for (let i=0; i < graduates.length; i++){
   universities.push(graduates[i].university)
 }
+
 console.log(`Universities alpahbetically ${universities.sort()}`); 
 
 /* Request 2: Create a new array called contactInfo that contains both first name and email of each student. 
@@ -100,7 +101,7 @@ console.log(contactInfo);
 const uni = [];
 for (let i=0; i < graduates.length; i++){
   if(graduates[i].university.includes("Uni")){
-    uni.push(JSON.stringify(graduates[i].university))
+    uni.push(graduates[i].university)
   }
 }
 console.log(`All the universities that include Uni ${uni}.`);
@@ -142,8 +143,8 @@ The zoos need a list of all their animal's names (names only, not scientific) co
 
 const lowerCase = [];
 
-zooAnimals.map((uppercase) => {
-  lowerCase.push(uppercase.animal_name.toUpperCase())
+zooAnimals.map((lc) => {
+  lowerCase.push(lc.animal_name.toLowerCase())
 });
 
 console.log(`The animal's name in lowercase: ${lowerCase}`); 
@@ -155,9 +156,9 @@ The zoos are concenred about animals with a lower population count. Find out whi
 */
 const lowerPopulation = [];
 
-zooAnimals.filter((pop) => {
-  if(pop.population < 5){
-    lowerPopulation.push(`Name: ${pop.animal_name}, Population: ${pop.population} `)
+zooAnimals.filter((animal) => {
+  if(animal.population < 5){
+    lowerPopulation.push(`Name: ${animal.animal_name}, Population: ${animal.population} `)
   }
 })
 
